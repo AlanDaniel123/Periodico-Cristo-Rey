@@ -1,0 +1,240 @@
+*{
+    Margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background:rgb(255, 255, 255);
+    overflow: auto;
+        caret-color: transparent;
+}
+
+header{
+    width: 100%;
+    height: 9%;
+    background-color: rgb(255, 255, 255);
+}
+
+.interior{
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.logo{
+    float: left;
+    padding: 5px 20px 0;
+}
+
+.logo img{
+    height: 88px;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.navegacion{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 100%;
+}
+
+.navegacion ul{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navegacion ul li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.navegacion ul li:hover{
+    transform: scale(1.1);
+}
+
+.navegacion ul li a{
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: .3s linear;
+
+}
+
+.navegacion ul li a:hover{
+    color:#2fc900e7 ;
+    transform: scale(1.1);
+}
+
+/* Pagina Principal*/
+.banner {
+    font-size: 34px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.banner a {
+    background-color: #f500ab;
+    border-radius: 10px;
+    color: black;
+    transition: .3s ease-in-out;
+
+
+}
+
+.banner a:hover {
+    background-color: rgb(130, 32, 223);
+
+}
+
+.logo1 img {
+    animation-name: Aumento;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation: 4s;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 16px 0;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+.videos video {
+
+    width: 300px;
+    border: green groove;
+    border-radius: 10px;
+    grid-column: 3;
+   margin-top: 20px;
+    margin-left: 100px;
+}
+
+.carousel {
+    width:85%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    height: 400px;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.carousel-track img {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.Inat {
+    text-align: center;
+    text-decoration: dotted;
+    margin-top: 10px;
+}
+
+.color {
+    animation: color 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+
+   
+}
+
+@keyframes color {
+    0% {
+        color: rgb(5, 148, 0);
+    }
+
+    50% {
+        color: #f500ab;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+
+@keyframes Aumento {
+    from {
+        height: 0px; 
+        width :0px;
+    }
+
+    to {
+        height: 450px;
+        width: 600px;
+    }
+}
+
+/*Nosotros*/
+
+h3s.inat{
+    text-align: center;
+}
+
+
